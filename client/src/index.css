@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', sans-serif; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; }
+
+.bubble-in  { border-radius: 0 12px 12px 12px; }
+.bubble-out { border-radius: 12px 0 12px 12px; }
