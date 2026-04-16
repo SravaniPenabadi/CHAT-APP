@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import socket from '../socket';
 import SettingsPanel from './SettingsPanel';
-
-const API = 'http://localhost:3000';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:3000';
+// const API_URL = import.meta.env.VITE_API_URL||'http://localhost:3000';
+// const API = 'http://localhost:3000';
 
 const dk = {
   rail:      '#1f2c34',

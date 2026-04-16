@@ -1,5 +1,5 @@
 import Message from './models/Message.js';
-
+import { io } from "socket.io-client";
 const onlineUsers = new Map(); // socketId → { username, room, lastSeen }
 const userSockets = new Map(); // username → socketId
 
